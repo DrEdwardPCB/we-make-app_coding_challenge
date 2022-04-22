@@ -1,0 +1,12 @@
+{
+    "nav": [
+        {
+            "name": "Task1",
+            "href": "/task1"
+        },
+        {
+            "name": "Task2",
+            "href": "/task2"
+        }
+    ]
+}

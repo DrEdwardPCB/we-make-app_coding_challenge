@@ -32,3 +32,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## obtaining API token
+
+1. Obtain via create account on producthunt then and access from API Dashboard on User Icon
+2. install ngrok on a testing computer, this may be useful if you want to do OAuth instead of developer token
+3. run `ngrok http 80` to expose localhost
+4. register with your appname as well as the ngrok
+    - you may edit it anytime 
+5. click on add developer token to get developer token that never expires
+6. copy the info and fill the `.env.local` clone from `.env.example`
+
