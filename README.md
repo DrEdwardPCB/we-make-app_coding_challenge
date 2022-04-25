@@ -66,7 +66,7 @@ yarn dev # run development server default at port 3000
 - `/components` contain reuseable tsx/jsx components
 - `/components/Layouts` contains layout that can be added . _app.tsx
 - `/components/styled` contains template component made using [tailwind-styped-component](https://www.npmjs.com/package/tailwind-styled-components)
-- `/metas` containg project metas right now only navMenu info.js
+- `/metas` containg project metas right now only navMenu info in form of json
 - `/utils` contains api as well as hooks and helper function that can be use across the project
 
 ## api endpoint
