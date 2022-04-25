@@ -85,16 +85,16 @@ type  Post {
 
 ```
 - `/api/graphal` backend caller of producthunt graphql api 
-    - the reason is to hide developer token from front_end user
+    - the reason of setting up backend caller is to hide developer token from front_end user
 
 ## pages
 - `/task1A`: complete part 1 option A requirement(display in dev console trigger by onload)
-- `/task1B`: complete part 1 option B requirement(display in dev console trigger byonload)
+- `/task1B`: complete part 1 option B requirement(display in dev console trigger by onload)
 - `/task2 `: complete task 2 requirement using option A api
 
 
 ## further impovement
-### projectwise
+### project wise
 - add test case
 - use meaningful name in commit
 - setup more strict eslint rules
