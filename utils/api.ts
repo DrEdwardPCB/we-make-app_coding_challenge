@@ -9,4 +9,8 @@ const config: AxiosRequestConfig<any> | undefined = {
 
 export const graphqlHttp = axios.create(config)
 
-export const getPosts = (query: string) => graphqlHttp.post('', { query })
+export const getPosts = (query: string) => {
+    console.log('called backend api')
+    console.log(process.env.DEVELOPER_TOKEN)
+    return graphqlHttp.post('', { query })
+}

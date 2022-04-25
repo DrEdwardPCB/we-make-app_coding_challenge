@@ -12,14 +12,16 @@ export default function handler(
     res: NextApiResponse<Data | any>
 ) {
     if (req.method === "POST") {
+
         getPosts(req.body.query)
             .then((response: any) => {
-                res.status(200).json(response)
+                return res.status(200).json(response.data.data)
             })
             .catch(err => {
-                res.status(200).json(err)
+                return res.status(400).json(err)
             })
+
     } else {
-        res.status(400).json({ message: 'need to use post' })
+        return res.status(400).json({ message: 'need to use post' })
     }
 }

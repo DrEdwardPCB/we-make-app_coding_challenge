@@ -1,20 +1,18 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
 import {H1, H2} from '../components/styled/header'
-import styles from '../styles/Home.module.css'
+import { PrimaryButton } from '../components/styled/button';
 
 const Home: NextPage = () => {
     return (
-        <div className={'w-screen'}>
+        <div className={'w-screen p-6'}>
             
             <H1>
                     WeMakeApp-coding challenge
             </H1>
             <H2>
-                    Edward Wong
+                    Author: Edward Wong
             </H2>
-            
+            <PrimaryButton><a href="https://wemakeapp-docs.notion.site/WeMakeApp-Coding-Challenge-6af51db8a8da414caf5761e530510155">requirement of the project</a></PrimaryButton>
         </div>
     )
 }
