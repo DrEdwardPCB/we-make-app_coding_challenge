@@ -75,12 +75,9 @@ const Task2: NextPage = () => {
     const fetchData = useCallback((x:0|1|2)=>{
         dispatch({type:'fetch'})
         let query = formQueries(x, featured.value)
-        console.log('fetchData', query)
         getPosts(query).then(response=>{
-            console.log('response',response.data)
             dispatch({type:'fetchSuccess', payload:response.data})
         }).catch(err=>{
-            console.log('err',err)
             dispatch({type:'fetchFail', payload:err})
         })
     },[featured.value])
