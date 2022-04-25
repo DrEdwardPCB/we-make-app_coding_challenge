@@ -108,3 +108,4 @@ type  Post {
 - can use more cheerio functionality on finding and building more detailed json file of the component
 - can use library like node-phantom-simple to trigger more data loaded on the page to fetch more data
 - open more filters for cheerio graphql
+- add API log using library like winston
